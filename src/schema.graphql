@@ -1,3 +1,14 @@
+type User {
+    id: String!
+    email: String!
+    displayedName: String!
+    password: String!
+}
+
 type Query {
     hello: String!
+}
+
+type Mutation {
+    register(email: String!, displayedName: String!, password: String!): User!
 }
