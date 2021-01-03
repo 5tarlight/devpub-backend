@@ -8,12 +8,14 @@
   "private": true,
   "dependencies": {
     "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "graphql-yoga": "^1.18.3",
     "mariadb": "^2.5.2",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/dotenv": "^8.2.0",
     "@types/sequelize": "^4.28.9",
     "nodemon": "^2.0.6",
     "ts-node": "^9.1.1",
