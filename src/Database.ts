@@ -1,7 +1,7 @@
 import { Sequelize, Model, DataTypes } from 'sequelize';
 import configure from './configure';
 
-class User extends Model {}
+export class User extends Model {}
 
 class Database {
   private readonly seq: Sequelize;
@@ -27,19 +27,7 @@ class Database {
         type: DataTypes.STRING,
         primaryKey: true,
         allowNull: false,
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      displayedName: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false
-      },
+      }
     }, {
       modelName: 'user',
       tableName: 'user',

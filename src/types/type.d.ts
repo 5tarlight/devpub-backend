@@ -3,3 +3,17 @@ export type RegisterParam = {
   displayedName: string,
   password: string,
 }
+
+export type User = {
+  id: string,
+  email: string,
+  displayedName: string,
+}
+
+export type UserRes = {
+  data: {
+    id: string,
+    email: string,
+    displayedName: string,
+  }
+}
