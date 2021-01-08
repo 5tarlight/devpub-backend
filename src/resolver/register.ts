@@ -10,15 +10,17 @@ export const register = async (
     email: email,
     displayedName: displayedName,
     password: password,
-  })
+  });
 
   if (registerRes.status !== 201) {
+    console.log('code is not 201')
     throw new Error('return code is not 201');
   }
 
   const userRes = await axios.get(`http://${config().server}/auth/emailprofile?email=${email}`);
 
   if (userRes.status === 404) {
+    console.log('user not found')
     throw new Error('user is not found')
   }
 

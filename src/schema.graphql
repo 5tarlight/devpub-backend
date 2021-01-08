@@ -5,8 +5,14 @@ type User {
     password: String!
 }
 
+type LoginResult {
+    success: Boolean!
+    user: User
+}
+
 type Query {
     hello: String!
+    login(email: String!, password: String!): LoginResult!
 }
 
 type Mutation {
