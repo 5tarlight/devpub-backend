@@ -22,3 +22,8 @@ export type LoginParam = {
   email: string,
   password: string,
 }
+
+export type LoginRes = {
+  success: boolean,
+  user: User,
+}
