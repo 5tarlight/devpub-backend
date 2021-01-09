@@ -7,7 +7,6 @@ const config = () => ({
     password: process.env.DB_PASSWORD,
   },
   server: process.env.SERVER,
-  frontend: process.env.FRONTEND,
 });
 
 export default config;

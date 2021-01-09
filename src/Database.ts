@@ -11,6 +11,8 @@ class Database {
       db: { database, host, user, password },
     } = configure();
 
+    console.log(database, host, user, password);
+
     // @ts-ignore
     this.seq = new Sequelize(database, user, password, {
       host: host,
